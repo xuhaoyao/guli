@@ -1,6 +1,6 @@
 package com.scnu.utils;
 
 public interface Code {
-    Integer SUCCESS = 200;
-    Integer ERROR = 500;
+    Integer SUCCESS = 20000;
+    Integer ERROR = 50000;
 }

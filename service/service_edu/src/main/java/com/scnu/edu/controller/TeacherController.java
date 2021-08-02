@@ -10,6 +10,7 @@ import com.scnu.swagger.config.SwaggerConfig;
 import com.scnu.utils.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,9 +25,10 @@ import java.util.List;
  * @author xhy
  * @since 2021-07-30
  */
-@Api(tags = SwaggerConfig.TAG_TEACHER)
+@Api(tags = "讲师管理")
 @RestController
-@RequestMapping("/edu/teacher")
+@RequestMapping("/eduservice/teacher")
+@CrossOrigin
 public class TeacherController {
 
     @Autowired
@@ -40,7 +42,7 @@ public class TeacherController {
     }
 
     @ApiOperation("按id删除一个讲师")
-    @DeleteMapping(value = "/delete/{id}")
+    @DeleteMapping(value = "/{id}")
     public Result deleteTeacher(@PathVariable("id") String id){
         boolean flag =  teacherService.removeById(id);
         if(flag){
@@ -52,10 +54,16 @@ public class TeacherController {
     }
 
     @ApiOperation("按照条件分页查询")
-    @GetMapping("/queryTeachers/{current}/{size}")
-    public Result queryCondition(@PathVariable("current") Integer current,
-                                 @PathVariable("size") Integer size,
-                                 TeacherQuery teacherQuery){
+    @PostMapping("/queryTeachers/{current}/{size}")
+    public Result queryCondition(
+            @ApiParam(name = "current",value = "当前页码",required = true)
+            @PathVariable("current") Integer current,
+
+            @ApiParam(name = "size",value = "每页记录数",required = true)
+            @PathVariable("size") Integer size,
+
+            @ApiParam(name = "teacherQuery",value = "表单提交的查询数据",required = false)
+            @RequestBody TeacherQuery teacherQuery){
         Page<Teacher> teacherPage = teacherService.getPageByCondition(current,size,teacherQuery);
         Long total = teacherPage.getTotal();
         List<Teacher> records = teacherPage.getRecords();
@@ -63,7 +71,7 @@ public class TeacherController {
     }
 
     @ApiOperation("添加一位讲师")
-    @PostMapping("/saveTeacher")
+    @PostMapping
     public Result saveTeacher(@RequestBody Teacher teacher){
         boolean flag = teacherService.save(teacher);
         if(flag){
@@ -75,14 +83,14 @@ public class TeacherController {
     }
 
     @ApiOperation("查询一位讲师")
-    @GetMapping("/getTeacher/{id}")
+    @GetMapping("/{id}")
     public Result getTeacher(@PathVariable("id") String id){
         Teacher teacher = teacherService.getById(id);
-        return Result.ok().data("item",teacher);
+        return Result.ok().data("teacher",teacher);
     }
 
     @ApiOperation("修改一位讲师数据")
-    @PutMapping("/modifyTeacher")
+    @PutMapping
     public Result modifyTeacher(@RequestBody Teacher teacher){
         boolean flag = teacherService.updateById(teacher);
         if(flag){

@@ -15,8 +15,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 
-    public static final String TAG_TEACHER = "讲师管理";
-
     @Bean
     public Docket webApiConfig(){
 
