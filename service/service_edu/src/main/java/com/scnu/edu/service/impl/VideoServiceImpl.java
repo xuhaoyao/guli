@@ -4,6 +4,7 @@ import com.scnu.edu.entity.Video;
 import com.scnu.edu.mapper.VideoMapper;
 import com.scnu.edu.service.VideoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.scnu.exceptions.VideoException;
 import org.springframework.stereotype.Service;
 
 /**
