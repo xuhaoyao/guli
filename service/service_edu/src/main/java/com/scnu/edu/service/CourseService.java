@@ -14,5 +14,9 @@ import com.scnu.edu.vo.CourseInfoVo;
  */
 public interface CourseService extends IService<Course> {
 
-    void addCourseInfo(CourseInfoVo courseInfoVo);
+    String addCourseInfo(CourseInfoVo courseInfoVo);
+
+    CourseInfoVo getCourseInfoById(String id);
+
+    void updateCourseInfo(CourseInfoVo courseInfoVo);
 }
