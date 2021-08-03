@@ -8,11 +8,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -25,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(tags = "课程管理")
 @RestController
 @RequestMapping("/eduservice/course")
+@CrossOrigin
 public class CourseController {
 
     @Autowired
@@ -35,8 +32,8 @@ public class CourseController {
     public Result addCourseInfo(
             @ApiParam(name = "courseInfoVo",value = "课程基本信息", required = true)
             @RequestBody CourseInfoVo courseInfoVo){
-        courseService.addCourseInfo(courseInfoVo);
-        return Result.ok();
+        String id = courseService.addCourseInfo(courseInfoVo);
+        return Result.ok().data("id",id);
     }
 
 }
