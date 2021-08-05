@@ -47,11 +47,10 @@ public class VideoController {
         return Result.ok().data("item",video);
     }
 
-    //待完善
     @ApiOperation("通过id删除小节")
     @DeleteMapping("/{id}")
     public Result deleteVideo(@PathVariable("id") String id){
-        videoService.removeById(id);
+        videoService.deleteVideo(id);
         return Result.ok();
     }
 

@@ -4,23 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7902f419-8e76-493f-bdab-945f25808915" name="Default Changelist" comment="完善课程管理第一第二环节">
+    <list default="true" id="7902f419-8e76-493f-bdab-945f25808915" name="Default Changelist" comment="完成发布课程环节">
+      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/client/VodClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/client/impl/VodFileDegradeFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/scnu/vod/VodApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/scnu/vod/controller/VodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/scnu/vod/service/VodService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/scnu/vod/service/impl/VodServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/scnu/vod/utils/VodConstantUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/src/test/java/com/scnu/vod/InitObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/src/test/java/com/scnu/vod/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service_base/service_base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service_base/service_base.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/service_edu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/service_edu.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/EduApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/EduApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/config/MPConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/config/MPConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/mapper/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/mapper/CourseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/mapper/xml/CourseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/mapper/xml/CourseMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/ChapterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/ChapterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/VideoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/VideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/VideoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/ChapterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/ChapterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/CourseServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/VideoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_oss/src/main/java/com/scnu/oss/OssApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/src/main/java/com/scnu/oss/OssApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_oss/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +82,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/mybatis-plus/demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_vod/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -86,7 +94,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\guli_parent\service\service_vod\src\main\resources" />
       <recent name="D:\project\guli_parent\service\service_edu\src\test\java\com\scnu\demo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.scnu.vod.utils" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.EduApplication">
@@ -103,49 +115,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CodeGenerator.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service_edu" />
+    <configuration name="Test01.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_vod" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.scnu.demo.*" />
+          <option name="PATTERN" value="com.scnu.vod.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.scnu.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.scnu.demo.CodeGenerator" />
-      <option name="METHOD_NAME" value="run" />
+      <option name="PACKAGE_NAME" value="com.scnu.vod" />
+      <option name="MAIN_CLASS_NAME" value="com.scnu.vod.Test01" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseServiceImpl.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service_edu" />
+    <configuration name="Test01.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_vod" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.scnu.edu.service.impl.*" />
+          <option name="PATTERN" value="com.scnu.vod.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.scnu.edu.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.scnu.edu.service.impl.CourseServiceImpl" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="com.scnu.vod" />
+      <option name="MAIN_CLASS_NAME" value="com.scnu.vod.Test01" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExcelTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service_edu" />
+    <configuration name="Test01.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_vod" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.scnu.demo.excel.*" />
+          <option name="PATTERN" value="com.scnu.vod.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.scnu.demo.excel" />
-      <option name="MAIN_CLASS_NAME" value="com.scnu.demo.excel.ExcelTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="com.scnu.vod" />
+      <option name="MAIN_CLASS_NAME" value="com.scnu.vod.Test01" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,15 +183,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OssApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="OssApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service_oss" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.oss.OssApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VodApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service_vod" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.scnu.oss.*" />
+          <option name="PATTERN" value="com.scnu.vod.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.oss.OssApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.vod.VodApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -187,10 +206,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.EduApplication" />
-        <item itemvalue="Spring Boot.OssApplication" />
-        <item itemvalue="JUnit.CourseServiceImpl.test1" />
-        <item itemvalue="JUnit.CodeGenerator.run" />
-        <item itemvalue="JUnit.ExcelTest.test1" />
+        <item itemvalue="Spring Boot.VodApplication" />
+        <item itemvalue="JUnit.Test01.test4" />
+        <item itemvalue="JUnit.Test01.test3" />
+        <item itemvalue="JUnit.Test01.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +224,7 @@
       <workItem from="1627621133448" duration="302000" />
       <workItem from="1627621451390" duration="50079000" />
       <workItem from="1627885788334" duration="42151000" />
-      <workItem from="1628051750029" duration="10691000" />
+      <workItem from="1628051750029" duration="32315000" />
     </task>
     <task id="LOCAL-00001" summary="环境搭建+讲师crud">
       <created>1627665109990</created>
@@ -277,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628005123559</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="完成发布课程环节">
+      <created>1628132365951</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1628132365951</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +361,7 @@
     <MESSAGE value="小节部分的crud" />
     <MESSAGE value="章节部分的crud" />
     <MESSAGE value="完善课程管理第一第二环节" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善课程管理第一第二环节" />
+    <MESSAGE value="完成发布课程环节" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成发布课程环节" />
   </component>
 </project>
