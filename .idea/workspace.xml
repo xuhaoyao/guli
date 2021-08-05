@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7902f419-8e76-493f-bdab-945f25808915" name="Default Changelist" comment="完成发布课程环节">
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/client/VodClient.java" afterDir="false" />
+    <list default="true" id="7902f419-8e76-493f-bdab-945f25808915" name="Default Changelist" comment="微服务调用,edu模块调用vod模块">
       <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/client/impl/VodFileDegradeFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_vod/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/scnu/vod/VodApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/scnu/vod/controller/VodController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/scnu/vod/service/VodService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/scnu/vod/service/impl/VodServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/scnu/vod/utils/VodConstantUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_vod/src/test/java/com/scnu/vod/InitObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_vod/src/test/java/com/scnu/vod/Test01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/service_edu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/service_edu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/EduApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/EduApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/VideoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/VideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/VideoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/VideoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_oss/src/main/java/com/scnu/oss/OssApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/src/main/java/com/scnu/oss/OssApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_oss/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +200,7 @@
       <workItem from="1627621133448" duration="302000" />
       <workItem from="1627621451390" duration="50079000" />
       <workItem from="1627885788334" duration="42151000" />
-      <workItem from="1628051750029" duration="32315000" />
+      <workItem from="1628051750029" duration="32636000" />
     </task>
     <task id="LOCAL-00001" summary="环境搭建+讲师crud">
       <created>1627665109990</created>
@@ -303,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628132365951</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="阿里云视频点播">
+      <created>1628173826813</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1628173826813</updated>
+    </task>
+    <task id="LOCAL-00013" summary="微服务调用,edu模块调用vod模块">
+      <created>1628174111102</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1628174111102</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,6 +352,8 @@
     <MESSAGE value="章节部分的crud" />
     <MESSAGE value="完善课程管理第一第二环节" />
     <MESSAGE value="完成发布课程环节" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成发布课程环节" />
+    <MESSAGE value="阿里云视频点播" />
+    <MESSAGE value="微服务调用,edu模块调用vod模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="微服务调用,edu模块调用vod模块" />
   </component>
 </project>
