@@ -54,7 +54,7 @@ public class TeacherController {
     }
 
     @ApiOperation("按照条件分页查询")
-    @PostMapping("/queryTeachers/{current}/{size}")
+    @GetMapping("/{current}/{size}")
     public Result queryCondition(
             @ApiParam(name = "current",value = "当前页码",required = true)
             @PathVariable("current") Integer current,
@@ -63,7 +63,7 @@ public class TeacherController {
             @PathVariable("size") Integer size,
 
             @ApiParam(name = "teacherQuery",value = "表单提交的查询数据",required = false)
-            @RequestBody TeacherQuery teacherQuery){
+            TeacherQuery teacherQuery){
         Page<Teacher> teacherPage = teacherService.getPageByCondition(current,size,teacherQuery);
         Long total = teacherPage.getTotal();
         List<Teacher> records = teacherPage.getRecords();

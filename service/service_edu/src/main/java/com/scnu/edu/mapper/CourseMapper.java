@@ -2,6 +2,7 @@ package com.scnu.edu.mapper;
 
 import com.scnu.edu.entity.Course;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.scnu.edu.vo.CoursePublishVo;
 
 /**
  * <p>
@@ -12,5 +13,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2021-08-02
  */
 public interface CourseMapper extends BaseMapper<Course> {
+
+    CoursePublishVo getCoursePublishById(String courseId);
 
 }
