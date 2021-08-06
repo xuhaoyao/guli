@@ -5,6 +5,8 @@ import com.scnu.edu.entity.Teacher;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.scnu.edu.vo.TeacherQuery;
 
+import java.util.List;
+
 /**
  * <p>
  * 讲师 服务类
@@ -16,4 +18,6 @@ import com.scnu.edu.vo.TeacherQuery;
 public interface TeacherService extends IService<Teacher> {
 
     Page<Teacher> getPageByCondition(Integer current, Integer size, TeacherQuery teacherQuery);
+
+    List<Teacher> getGoodTeacherList(int i);
 }

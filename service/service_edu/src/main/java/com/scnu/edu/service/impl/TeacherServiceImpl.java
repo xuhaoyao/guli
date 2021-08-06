@@ -7,10 +7,12 @@ import com.scnu.edu.mapper.TeacherMapper;
 import com.scnu.edu.service.TeacherService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.scnu.edu.vo.TeacherQuery;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import java.sql.Wrapper;
+import java.util.List;
 
 /**
  * <p>
@@ -50,6 +52,13 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
         }
         baseMapper.selectPage(page,wrapper);
         return page;
+    }
+
+    @Override
+    public List<Teacher> getGoodTeacherList(int i) {
+        QueryWrapper<Teacher> wrapper = new QueryWrapper<>();
+        wrapper.orderByDesc("level","sort").last("limit " + i);
+        return baseMapper.selectList(wrapper);
     }
 
 }

@@ -18,9 +18,13 @@ import com.scnu.utils.CourseStatus;
 import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
+
+import java.util.List;
 
 /**
  * <p>
@@ -167,5 +171,12 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         if(result != 1){
             throw new CourseException("删除课程失败");
         }
+    }
+
+    @Override
+    public List<Course> getHotCourseList(Integer num) {
+        QueryWrapper<Course> wrapper = new QueryWrapper<>();
+        wrapper.orderByDesc("view_count","buy_count").last("limit " + num);
+        return baseMapper.selectList(wrapper);
     }
 }

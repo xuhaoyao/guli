@@ -7,6 +7,8 @@ import com.scnu.edu.vo.CourseInfoVo;
 import com.scnu.edu.vo.CoursePublishVo;
 import com.scnu.edu.vo.CourseQuery;
 
+import java.util.List;
+
 /**
  * <p>
  * 课程 服务类
@@ -30,4 +32,6 @@ public interface CourseService extends IService<Course> {
     Page<Course> getPageByCondition(Integer current, Integer size, CourseQuery courseQuery);
 
     void deleteCourse(String id);
+
+    List<Course> getHotCourseList(Integer num);
 }
