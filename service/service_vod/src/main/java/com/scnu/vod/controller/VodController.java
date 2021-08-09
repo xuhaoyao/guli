@@ -45,4 +45,12 @@ org.apache.tomcat.util.http.fileupload.FileUploadBase$FileSizeLimitExceededExcep
         return Result.ok();
     }
 
+    @ApiOperation("根据视频id获取凭证")
+    @GetMapping("/playauth/{id}")
+    public Result getPlayAuth(@PathVariable("id") String id){
+        String playAuth = vodService.getPlayAuth(id);
+        System.out.println(playAuth);
+        return Result.ok().data("playAuth",playAuth);
+    }
+
 }

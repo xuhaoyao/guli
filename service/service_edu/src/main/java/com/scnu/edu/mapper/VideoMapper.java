@@ -2,6 +2,7 @@ package com.scnu.edu.mapper;
 
 import com.scnu.edu.entity.Video;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>

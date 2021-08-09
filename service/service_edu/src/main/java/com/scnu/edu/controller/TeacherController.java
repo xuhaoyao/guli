@@ -25,7 +25,7 @@ import java.util.List;
  * @author xhy
  * @since 2021-07-30
  */
-@Api(tags = "讲师管理")
+@Api(tags = "后台讲师管理")
 @RestController
 @RequestMapping("/eduservice/teacher")
 @CrossOrigin

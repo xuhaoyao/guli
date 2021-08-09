@@ -13,4 +13,17 @@
         where ec.id = #{id}
     </select>
 
+    <select id="getCourseInfoFront" resultType="com.scnu.edu.vo.CourseInfoFrontVo">
+        select ec.id,ec.title,ec.price,ec.lesson_num,ec.cover,ec.buy_count,
+               ec.view_count,ecd.description,et.id as teacherId,et.name as teacherName,et.intro,et.avatar,
+               es1.id as subjectLevelOneId,es1.title as subjectLevelOne,
+               es2.id as subjectLevelTwoId,es2.title as subjectLevelTwo
+        from edu_course ec
+              left join edu_course_description ecd on ec.id = ecd.id
+              left join edu_teacher et on ec.teacher_id = et.id
+              left join edu_subject es1 on ec.subject_parent_id = es1.id
+              left join edu_subject es2 on ec.subject_id = es2.id
+        where ec.id=#{id}
+    </select>
+
 </mapper>

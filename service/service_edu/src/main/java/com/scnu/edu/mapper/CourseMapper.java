@@ -2,6 +2,7 @@ package com.scnu.edu.mapper;
 
 import com.scnu.edu.entity.Course;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.scnu.edu.vo.CourseInfoFrontVo;
 import com.scnu.edu.vo.CoursePublishVo;
 
 /**
@@ -16,4 +17,5 @@ public interface CourseMapper extends BaseMapper<Course> {
 
     CoursePublishVo getCoursePublishById(String courseId);
 
+    CourseInfoFrontVo getCourseInfoFront(String id);
 }

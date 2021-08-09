@@ -8,8 +8,11 @@ import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
 import com.aliyuncs.vod.model.v20170321.DeleteVideoResponse;
+import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthRequest;
+import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthResponse;
 import com.scnu.exceptions.VodException;
 import com.scnu.vod.service.VodService;
+import com.scnu.vod.utils.InitObject;
 import com.scnu.vod.utils.VodConstantUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -62,6 +65,29 @@ public class VodServiceImpl implements VodService {
             response = deleteVideo(client,id);
         } catch (Exception e) {
             throw new VodException(e.getMessage());
+        }
+    }
+
+    @Override
+    public String getPlayAuth(String id) {
+        //1.初始化对象
+        DefaultAcsClient client = InitObject.initVodClient(VodConstantUtil.KEYID,VodConstantUtil.KEYSECRET);
+        //2.创建获取视频凭证request和response
+        GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
+        GetVideoPlayAuthResponse response = new GetVideoPlayAuthResponse();
+        //3.设置视频id
+        request.setVideoId(id);
+        //4.调用初始化对象里面的方法,传递request,获取视频数据
+        try {
+            response = client.getAcsResponse(request);
+            //播放凭证
+            String playAuth = response.getPlayAuth();
+            //VideoMeta信息
+            System.out.println("VideoMeta.Title = " + response.getVideoMeta().getTitle());
+            return playAuth;
+        } catch (com.aliyuncs.exceptions.ClientException e) {
+            e.printStackTrace();
+            throw new VodException("获取视频播放凭证失败");
         }
     }
 

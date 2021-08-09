@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.scnu.edu.vo.TeacherQuery;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -20,4 +21,6 @@ public interface TeacherService extends IService<Teacher> {
     Page<Teacher> getPageByCondition(Integer current, Integer size, TeacherQuery teacherQuery);
 
     List<Teacher> getGoodTeacherList(int i);
+
+    Map<String, Object> getFrontPage(Integer current, Integer size);
 }

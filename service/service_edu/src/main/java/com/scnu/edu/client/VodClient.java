@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(value = "service-vod",fallback = VodFileDegradeFeignClient.class) //@FeignClient注解用于指定从哪个服务中调用功能,名称与被调用的服务名保持一致.
+//@FeignClient注解用于指定从哪个服务中调用功能,名称与被调用的服务名保持一致.
+@FeignClient(value = "service-vod",fallback = VodFileDegradeFeignClient.class)
 @Component
 public interface VodClient {
-    //定义调用的方法路径
+    //定义调用的方法路径(路径一定要写全)
     @DeleteMapping("/eduvod/video/{id}")
     Result deleteVideo(@PathVariable("id") String id);
 
