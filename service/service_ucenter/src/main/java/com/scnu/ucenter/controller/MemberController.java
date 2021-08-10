@@ -7,6 +7,8 @@ import com.scnu.ucenter.vo.MemberInfo;
 import com.scnu.ucenter.vo.RegisterVo;
 import com.scnu.utils.JwtUtils;
 import com.scnu.utils.Result;
+import com.scnu.utils.dto.CommentUser;
+import com.scnu.utils.dto.OrderUser;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,5 +56,16 @@ public class MemberController {
         return Result.ok().data("item",memberInfo);
     }
 
+    @GetMapping("/commentUser/{id}")
+    public CommentUser commentUser(@PathVariable("id") String id){
+        CommentUser commentUser = memberService.getCommentUser(id);
+        return commentUser;
+    }
+
+    @ApiOperation("生成订单的客户信息")
+    @GetMapping("/orderInfo/{memberId}")
+    public OrderUser orderUser(@PathVariable("memberId") String memberId){
+        return memberService.getOrderUser(memberId);
+    }
 }
 

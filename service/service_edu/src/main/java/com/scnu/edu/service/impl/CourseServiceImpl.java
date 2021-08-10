@@ -1,5 +1,6 @@
 package com.scnu.edu.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -14,6 +15,7 @@ import com.scnu.edu.service.VideoService;
 import com.scnu.edu.vo.*;
 import com.scnu.exceptions.CourseException;
 import com.scnu.utils.CourseStatus;
+import com.scnu.utils.dto.OrderCourseInfo;
 import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -238,5 +240,45 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
     public CourseInfoFrontVo getCourseInfoFront(String id) {
         CourseInfoFrontVo courseInfoFrontVo = baseMapper.getCourseInfoFront(id);
         return courseInfoFrontVo;
+    }
+
+    @Override
+    public OrderCourseInfo getOrderCourseInfo(String courseId) {
+        CourseInfoFrontVo courseInfoFront = baseMapper.getCourseInfoFront(courseId);
+        OrderCourseInfo orderCourseInfo = new OrderCourseInfo();
+        orderCourseInfo.setCourseId(courseId);
+        orderCourseInfo.setCourseCover(courseInfoFront.getCover());
+        orderCourseInfo.setCourseTitle(courseInfoFront.getTitle());
+        orderCourseInfo.setTeacherName(courseInfoFront.getTeacherName());
+        orderCourseInfo.setTotalFee(courseInfoFront.getPrice());
+        return orderCourseInfo;
+    }
+
+    @Transactional
+    @Override
+    public void orderBuy(String courseId) {
+        synchronized (this) {
+            Course course = baseMapper.selectById(courseId);
+            Long buyCount = course.getBuyCount();
+            course.setBuyCount(buyCount + 1);
+            int result = baseMapper.updateById(course);
+            if (result != 1) {
+                throw new CourseException("订单购买时,更新课程表出错");
+            }
+        }
+    }
+
+    @Transactional
+    @Override
+    public void addVidwCount(String courseId) {
+        synchronized (this){
+            Course course = baseMapper.selectById(courseId);
+            Long viewCount = course.getViewCount();
+            course.setViewCount(viewCount + 1);
+            int result = baseMapper.updateById(course);
+            if(result != 1){
+                throw new CourseException("增加课程浏览量时出错");
+            }
+        }
     }
 }

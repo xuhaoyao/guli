@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.scnu.ucenter.vo.LoginVo;
 import com.scnu.ucenter.vo.MemberInfo;
 import com.scnu.ucenter.vo.RegisterVo;
+import com.scnu.utils.dto.CommentUser;
+import com.scnu.utils.dto.OrderUser;
 
 /**
  * <p>
@@ -23,4 +25,8 @@ public interface MemberService extends IService<Member> {
     MemberInfo getInfo(String id);
 
     Member getByOpenId(String openid);
+
+    CommentUser getCommentUser(String id);
+
+    OrderUser getOrderUser(String memberId);
 }

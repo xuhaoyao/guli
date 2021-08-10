@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.scnu.edu.entity.Chapter;
 import com.scnu.edu.entity.Video;
 import com.scnu.edu.mapper.ChapterMapper;
+import com.scnu.edu.mapper.VideoMapper;
 import com.scnu.edu.service.ChapterService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.scnu.edu.service.VideoService;
@@ -13,6 +14,7 @@ import com.scnu.exceptions.ChapterException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -79,6 +81,7 @@ public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> impl
         return baseMapper.selectList(wrapper);
     }
 
+    @Transactional
     @Override
     public void deleteChapter(String id) {
         QueryWrapper<Video> wrapper = new QueryWrapper<>();
@@ -93,6 +96,7 @@ public class ChapterServiceImpl extends ServiceImpl<ChapterMapper, Chapter> impl
         }
     }
 
+    @Transactional
     @Override
     public void deleteByCourseId(String id) {
         QueryWrapper<Chapter> wrapper = new QueryWrapper<>();

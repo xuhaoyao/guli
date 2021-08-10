@@ -12,7 +12,8 @@ import com.scnu.ucenter.vo.MemberInfo;
 import com.scnu.ucenter.vo.RegisterVo;
 import com.scnu.utils.JwtUtils;
 import com.scnu.utils.MD5;
-import org.apache.xmlbeans.impl.jam.mutable.MMember;
+import com.scnu.utils.dto.CommentUser;
+import com.scnu.utils.dto.OrderUser;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -109,5 +110,27 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         QueryWrapper<Member> wrapper = new QueryWrapper<>();
         wrapper.eq("openid",openid);
         return baseMapper.selectOne(wrapper);
+    }
+
+    @Override
+    public CommentUser getCommentUser(String id) {
+        Member member = baseMapper.selectById(id);
+        CommentUser commentUser = new CommentUser();
+        commentUser.setNickname(member.getNickname());
+        commentUser.setAvatar(member.getAvatar());
+        return commentUser;
+    }
+
+    @Override
+    public OrderUser getOrderUser(String memberId) {
+        QueryWrapper<Member> wrapper = new QueryWrapper<>();
+        wrapper.eq("id",memberId);
+        wrapper.select("mobile","nickname");
+        Member member = baseMapper.selectOne(wrapper);
+        OrderUser orderUser = new OrderUser();
+        orderUser.setMemberId(memberId);
+        orderUser.setNickname(member.getNickname());
+        orderUser.setMobile(member.getMobile());
+        return orderUser;
     }
 }

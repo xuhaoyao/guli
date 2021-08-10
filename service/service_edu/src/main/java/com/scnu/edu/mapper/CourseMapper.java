@@ -4,6 +4,7 @@ import com.scnu.edu.entity.Course;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.scnu.edu.vo.CourseInfoFrontVo;
 import com.scnu.edu.vo.CoursePublishVo;
+import com.scnu.utils.dto.OrderCourseInfo;
 
 /**
  * <p>

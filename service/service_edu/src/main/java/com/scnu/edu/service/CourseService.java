@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.scnu.edu.entity.Course;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.scnu.edu.vo.*;
+import com.scnu.utils.dto.OrderCourseInfo;
 
 import java.util.List;
 import java.util.Map;
@@ -39,4 +40,10 @@ public interface CourseService extends IService<Course> {
     Map<String, Object> courseFrontInfo(Integer current, Integer size, CourseFrontQuery courseFrontQuery);
 
     CourseInfoFrontVo getCourseInfoFront(String id);
+
+    OrderCourseInfo getOrderCourseInfo(String courseId);
+
+    void orderBuy(String courseId);
+
+    void addVidwCount(String courseId);
 }
