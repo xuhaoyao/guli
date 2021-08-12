@@ -19,7 +19,6 @@ import java.util.List;
 @Api(tags = "前台展示")
 @RestController
 @RequestMapping("/eduservice/index")
-@CrossOrigin
 public class IndexController {
 
     @Autowired
