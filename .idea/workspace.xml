@@ -4,79 +4,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7902f419-8e76-493f-bdab-945f25808915" name="Default Changelist" comment="前台讲师和课程显示,视频播放">
-      <change afterPath="$PROJECT_DIR$/common/service_base/src/main/java/com/scnu/exceptions/CommentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_base/src/main/java/com/scnu/exceptions/LoginException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_base/src/main/java/com/scnu/exceptions/OrderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_base/src/main/java/com/scnu/exceptions/RegisterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_utils/src/main/java/com/scnu/utils/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_utils/src/main/java/com/scnu/utils/MD5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_utils/src/main/java/com/scnu/utils/RandomUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_utils/src/main/java/com/scnu/utils/dto/CommentUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_utils/src/main/java/com/scnu/utils/dto/OrderCourseInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_utils/src/main/java/com/scnu/utils/dto/OrderUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/client/OrderClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/client/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/client/impl/OrderDegradeFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/client/impl/UserDegradeFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/front/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/entity/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/OrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/client/EduClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/client/Impl/EduClientImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/client/Impl/MemberClientImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/client/MemberClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/config/MainConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/controller/PayLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/entity/PayLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/mapper/PayLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/mapper/xml/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/mapper/xml/PayLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/service/PayLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/service/impl/PayLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/utils/HttpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/scnu/order/utils/OrderNoUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/test/java/com/scnu/CodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/test/java/com/scnu/Test01.java" afterDir="false" />
+    <list default="true" id="7902f419-8e76-493f-bdab-945f25808915" name="Default Changelist" comment=".">
+      <change afterPath="$PROJECT_DIR$/service/service_acl/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/ServiceAclApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/entity/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/entity/RolePermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/helper/MemuHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/helper/PermissionHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/mapper/RolePermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/mapper/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/mapper/xml/PermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/mapper/xml/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/mapper/xml/RolePermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/mapper/xml/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/mapper/xml/UserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/IndexService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/RolePermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/impl/IndexServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/impl/RolePermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/impl/UserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service_base/service_base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service_base/service_base.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service_utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service_utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service_utils/service_utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service_utils/service_utils.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service_utils/src/main/java/com/scnu/utils/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service_utils/src/main/java/com/scnu/utils/Code.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service_base/src/main/java/com/scnu/swagger/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service_base/src/main/java/com/scnu/swagger/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_cms1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_cms1/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/service_edu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/service_edu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/config/MPConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/config/MPConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/ChapterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/ChapterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/SubjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/VideoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/front/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/front/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/front/CourseFrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/front/CourseFrontController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/mapper/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/mapper/CourseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/ChapterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/ChapterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/front/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/front/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/front/TeacherFrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/scnu/edu/controller/front/TeacherFrontController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/test/java/com/scnu/demo/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/test/java/com/scnu/demo/CodeGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_oss/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_oss/src/test/java/com/scnu/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/src/test/java/com/scnu/Test01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_ucenter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/UcenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/UcenterApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/mapper/MemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/mapper/xml/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/mapper/xml/MemberMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/service/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/scnu/ucenter/service/impl/MemberServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_ucenter/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_vod/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_vod/src/test/java/com/scnu/vod/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/src/test/java/com/scnu/vod/Test01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +122,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/mybatis-plus/demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/service_utils/src/main/java/com/scnu/utils" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -141,11 +134,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\guli_parent\service\service_order\src\main\java\com\scnu\order\utils" />
-      <recent name="D:\project\guli_parent\service\service_ucenter\src\main\java\com\scnu\ucenter\utils" />
       <recent name="D:\project\guli_parent\common\service_utils\src\main\java\com\scnu\utils" />
-      <recent name="D:\project\guli_parent\service\service_cms1\src\main\java\com\scnu\cms" />
-      <recent name="D:\project\guli_parent\service\service_vod\src\main\resources" />
+      <recent name="D:\project\guli_parent\common\spring_security\src\main\java\com" />
+      <recent name="D:\project\guli_parent\service\service_acl\src\main\java\com" />
+      <recent name="D:\project\guli_parent\service\service_acl\src\main\java\com\scnu" />
+      <recent name="D:\project\guli_parent\infrastructure\api_gateway\src\main\java\com\scnu\gateway" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.scnu" />
@@ -154,7 +147,7 @@
       <recent name="com.scnu.cms" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceAclApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -166,34 +159,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CodeGenerator.run (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service_order" />
+    <configuration name="CanalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="canal_clientedu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.scnu.*" />
+          <option name="PATTERN" value="com.scnu.canal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.scnu" />
-      <option name="MAIN_CLASS_NAME" value="com.scnu.CodeGenerator" />
-      <option name="METHOD_NAME" value="run" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CodeGenerator.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service_edu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.scnu.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.scnu.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.scnu.demo.CodeGenerator" />
-      <option name="METHOD_NAME" value="run" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.canal.CanalApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -201,6 +175,19 @@
     <configuration name="CmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service_cms1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.cms.CmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DailyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service_statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.scnu.statistics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.statistics.DailyApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -218,6 +205,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="api_gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.scnu.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GuliParentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="guli_parent" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.guli_parent.GuliParentApplication" />
@@ -225,14 +225,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MsmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="MsmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service_msm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.scnu.msm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.msm.MsmApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -248,6 +242,13 @@
     <configuration name="OssApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service_oss" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.oss.OssApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceAclApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_acl" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.scnu.aclservice.ServiceAclApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -274,11 +275,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UcenterApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.EduApplication" />
-        <item itemvalue="JUnit.CodeGenerator.run (1)" />
-        <item itemvalue="Spring Boot.MsmApplication" />
-        <item itemvalue="JUnit.CodeGenerator.run" />
+        <item itemvalue="Spring Boot.CanalApplication" />
+        <item itemvalue="Spring Boot.UcenterApplication" />
+        <item itemvalue="Spring Boot.DailyApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +299,9 @@
       <workItem from="1628393967927" duration="328000" />
       <workItem from="1628394316260" duration="32129000" />
       <workItem from="1628488698021" duration="14122000" />
-      <workItem from="1628527426118" duration="24361000" />
+      <workItem from="1628527426118" duration="44037000" />
+      <workItem from="1628738135193" duration="14000" />
+      <workItem from="1628740292404" duration="25494000" />
     </task>
     <task id="LOCAL-00001" summary="环境搭建+讲师crud">
       <created>1627665109990</created>
@@ -447,7 +450,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628486960290</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="课程评论,微信支付,订单模块">
+      <created>1628586899123</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1628586899123</updated>
+    </task>
+    <task id="LOCAL-00023" summary=".">
+      <created>1628587000716</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1628587000716</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,12 +526,49 @@
     <MESSAGE value="微服务调用,edu模块调用vod模块" />
     <MESSAGE value="测试熔断器" />
     <MESSAGE value="前台banner(Redis缓存),课程,老师显示" />
-    <MESSAGE value="." />
     <MESSAGE value="邮件发送" />
     <MESSAGE value="单点登录" />
     <MESSAGE value="微信登录功能" />
     <MESSAGE value="httpclient工具类" />
     <MESSAGE value="前台讲师和课程显示,视频播放" />
-    <option name="LAST_COMMIT_MESSAGE" value="前台讲师和课程显示,视频播放" />
+    <MESSAGE value="课程评论,微信支付,订单模块" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/common/spring_security/src/main/java/com/scnu/serurity/security/DefaultPasswordEncoder.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/common/spring_security/src/main/java/com/scnu/serurity/filter/TokenLoginFilter.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/common/spring_security/src/main/java/com/scnu/serurity/filter/TokenLoginFilter.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/common/spring_security/src/main/java/com/scnu/serurity/filter/TokenAuthenticationFilter.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/service/service_acl/src/main/java/com/scnu/aclservice/service/impl/UserDetailsServiceImpl.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/common/spring_security/src/main/java/com/scnu/serurity/security/TokenManager.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

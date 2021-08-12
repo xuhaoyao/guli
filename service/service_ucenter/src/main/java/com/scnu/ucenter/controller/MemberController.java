@@ -67,5 +67,11 @@ public class MemberController {
     public OrderUser orderUser(@PathVariable("memberId") String memberId){
         return memberService.getOrderUser(memberId);
     }
+
+    @ApiOperation("查询某一天的注册人数")
+    @GetMapping("/registerNum/{day}")
+    public Integer registerNum(@PathVariable("day") String day){
+        return memberService.getRegisterNum(day);
+    }
 }
 

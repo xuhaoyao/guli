@@ -6,6 +6,8 @@
         <module>service</module>
 <!--        <module>service_edu</module>-->
         <module>common</module>
+        <module>canal_clientedu</module>
+        <module>infrastructure</module>
     </modules>
 
     <parent>

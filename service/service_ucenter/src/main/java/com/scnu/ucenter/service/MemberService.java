@@ -29,4 +29,7 @@ public interface MemberService extends IService<Member> {
     CommentUser getCommentUser(String id);
 
     OrderUser getOrderUser(String memberId);
+
+    //按日期查询某一天的注册人数
+    Integer getRegisterNum(String day);
 }

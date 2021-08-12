@@ -133,4 +133,10 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         orderUser.setMobile(member.getMobile());
         return orderUser;
     }
+
+    @Override
+    public Integer getRegisterNum(String day) {
+        Integer count = baseMapper.getRegisterNum(day);
+        return count;
+    }
 }
